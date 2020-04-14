@@ -9,6 +9,6 @@ export class ProductsService {
 
   constructor(private _http:HttpClient) { }
   getData(){
-    return this._http.get("https://raw.githubusercontent.com/praveengiri07/demo1/master/products.json").pipe(map(data=>data['products']), flatMap(data1=>data1));
+    return this._http.get("https://raw.githubusercontent.com/praveengiri07/demo1/3e392498d4ec946f1debce220cd348ef05d02a92/products.json").pipe(map(data=>data['products']), flatMap(data1=>data1));
   }
 }
