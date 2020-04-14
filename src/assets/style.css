@@ -1,0 +1,38 @@
+body{
+    padding: 5px;
+}
+h1 { text-align: center; }
+div { padding: 5px 0; }
+.pb-3 {
+    padding-bottom: 1.5em;
+}
+.p-2 { padding: 0.5em;}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+img {
+    max-width: 100%;
+    margin: auto;
+    height: auto;
+    display: block;
+}
+.text-center { text-align: center; }
+.float-right { float: right; }
+
+.col-12, .col-sm-6, .col-lg-4  { 
+    position: relative;
+    width: 100%; 
+    float: left;
+}
+@media only Screen AND (min-width: 768px) AND (max-width: 991px){
+    .col-sm-6 { 
+        width: 50%;
+        float: left;
+    }    
+}
+@media only Screen AND (min-width: 992px){
+    .col-lg-4 { width: 33.3%;}
+}
